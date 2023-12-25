@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+@font-face{
+    font-family: 'Norse-Bold';
+    src: url('Norse-Bold.otf') format('opentype');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 60vw;
+    height: 95vh;
+    margin-top: 1rem;
+    display: flex;
+    border: 1px solid transparent;
+    box-shadow: 5px 5px 7px #e1e0e066;
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    width: 45%;
+    position: relative;
+}
+
+.left-container > img{
+    width: 100%;
+    height: 100%;
+}
+
+.logo-container{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo-img img{
+    width: 4rem;
+    height: 5rem;
+}
+
+.logo-text{
+    color: white;
+    font-size: 4rem;
+    font-family: 'Norse-Bold', system-ui, sans-serif;  
+}
+
+.img-credit-container{
+    position: absolute;
+    color: white;
+    font-size: 0.8rem;
+    bottom: 1rem;
+}
+
+.img-credit-container a{
+    color: white;
+}
+
+.right-container{
+    width: 55%;
+    padding: 2rem;
+}
+
+.right-container h2{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.form-container h3{
+    font-size: 1rem;
+    margin-bottom: 0.9rem;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+    /* padding: 2rem 0; */
+    /* box-shadow: 5px 5px 7px #d2d2d266; */
+    /* border: 2px solid red; */
+}
+
+.form-control{   
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+}
+
+label{
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 0.2rem;
+}
+
+input{
+    border-radius: 3px;
+    border: 1px solid #E5E7EB;
+    padding: 0.3rem;
+    margin-bottom: 0.9rem;
+}
+
+input:focus,
+input:valid{
+    outline: 0.12rem solid blue;
+    box-shadow: 5px 5px 7px #e1e0e066;
+}
+
+/* input:invalid{
+    border: 0.12rem solid red;
+} */
+
+.button-container > .btn,
+.button-container > p{
+    margin-top: 0.8rem;
+}
+
+.btn{
+    background-color: #596D48;
+    color: white;
+    padding: 1rem 2rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.pwd-output,
+.conf-pwd-output{
+    font-size: 0.75rem;
+    color: red;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+}
